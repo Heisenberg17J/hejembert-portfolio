@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero img{
+    mask-image: linear-gradient(
+    black 95%,
+     transparent
+     );
+}
+
+@keyframes fadeIn {
+    from {
+    opacity: 0;
+    transform: translateY(2rem);
+    }
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+.animate-fadeIn {
+    animation: fadeIn 0.5s ease-out;
+}
+
+
+@keyframes orbit {
+    from {
+    transform: rotate(0deg) translateX(12rem) rotate(0deg);
+    }
+    to {
+    transform: rotate(360deg) translateX(12rem) rotate(-360deg);
+    }
+}
+
