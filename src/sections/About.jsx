@@ -82,18 +82,6 @@ export default function About() {
                 lograrlo de manera eficiente y con calidad.
               </p>
             </div>
-
-            {/* CTA Buttons */}
-            <div className="flex  justify-center flex-wrap gap-4 pt-4">
-              <button className="bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/30 hover:scale-105 transition-all duration-300 flex items-center space-x-2">
-                <Briefcase className="w-5 h-5" />
-                <span>Trabajemos Juntos</span>
-              </button>
-              
-              <button className="bg-white/5 border border-white/10 text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 hover:border-blue-500/30 transition-all duration-300">
-                Ver Proyectos
-              </button>
-            </div>
           </div>
 
           {/* Right: Services Grid */}
