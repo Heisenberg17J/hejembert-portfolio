@@ -53,12 +53,12 @@ export default function Hero() {
             </p>
             
             <div className="pt-6">
-                <button className="btn bg-gradient-to-r from-blue-700 via-blue-600 to-cyan-300 
+                <a href="https://drive.google.com/file/d/1GCvaSTOgcpoimGrrTZUpmqQztZsO9ZIp/view?usp=sharing" target="_blank" className="btn bg-gradient-to-r from-blue-700 via-blue-600 to-cyan-300 
                 rounded-full px-8 py-3 text-lg font-semibold text-white
                 shadow-lg hover:shadow-xl hover:scale-105 
                 transition-all duration-300 border-0">
                 Mi HdV
-                </button>
+                </a>
             </div>
             </div>
         </div>
