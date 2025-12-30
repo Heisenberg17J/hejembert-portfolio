@@ -9,7 +9,7 @@ export default function TechnologySection({ tech }) {
       {/* Technology Header */}
       <div className="flex items-center justify-between flex-wrap gap-4">
         <div className="flex items-center gap-4">
-          <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${tech.color} flex items-center justify-center text-2xl shadow-lg`}>
+          <div className={`w-12 h-12 rounded-xl text-white bg-gradient-to-br ${tech.color} flex items-center justify-center text-2xl shadow-lg`}>
             <FontAwesomeIcon icon={iconMap[tech.icon]}/>
           </div>
           <div>

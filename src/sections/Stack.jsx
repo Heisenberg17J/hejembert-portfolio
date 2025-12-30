@@ -53,7 +53,7 @@ export default function Stack() {
               )}
               
               <div className="relative">
-                <div className={`text-5xl mb-4 transition-transform duration-300 ${
+                <div className={`text-5xl text-white mb-4 transition-transform duration-300 ${
                   selectedTech?.id === tech.id ? 'scale-110' : 'group-hover:scale-110'
                 }`}>
                   <FontAwesomeIcon icon={iconMap[tech.icon]}/>
