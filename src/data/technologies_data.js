@@ -68,7 +68,7 @@ export const technologies_data = [
             description: "Sitio web de e-commerce para comidas artesanales",
             tech: ["React", "Supabase", "Tailwind"],
             image: "/images/projects/pagina-comidas.png",
-            viewProject: "https://artesanalcocina.netlify.app/"
+            viewProject: "https://artesanalcocina.pages.dev/"
         }
         ]
     }
