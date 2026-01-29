@@ -39,7 +39,7 @@ export const technologies_data = [
         color: "from-yellow-500 to-orange-500",
         borderColor: "border-yellow-500/30",
         hoverBorder: "hover:border-yellow-500",
-        category: "Frontend & Backend",
+        category: "Frontend",
         experience: "2 años",
         projects: [
         {
@@ -60,7 +60,7 @@ export const technologies_data = [
         color: "from-cyan-500 to-blue-500",
         borderColor: "border-cyan-500/30",
         hoverBorder: "hover:border-cyan-500",
-        category: "Frontend",
+        category: "Frontend & Backend",
         experience: "6 meses",
         projects: [
         {
@@ -69,6 +69,13 @@ export const technologies_data = [
             tech: ["React", "Supabase", "Tailwind"],
             image: "/images/projects/pagina-comidas.png",
             viewProject: "https://artesanalcocina.pages.dev/"
+        },
+        {
+            title: "Menu interactivo Web",
+            description: "Menu interactivo mobile-responsive para restaurante",
+            tech: ["React", "Supabase", "Tailwind"],
+            image: "/images/projects/menu-digital.png",
+            viewProject: "https://flordemexico.vercel.app/"
         }
         ]
     }
