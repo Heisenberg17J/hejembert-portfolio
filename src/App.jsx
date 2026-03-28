@@ -7,19 +7,26 @@ import Contact from './sections/Contact';
 import Footer from './components/layout/Footer';
 
 function App() {
-
   return (
-    <>
-      <div>
-        <Navbar/>
-        <section id="inicio"><Hero/></section>
-        <section id="acerca"><About/></section>
-        <section id="proyectos"><Projects/></section>
-        <section id="contacto"><Contact/></section>
-        <Footer/>
-      </div>
-    </>
-  )
+    <div className="min-h-screen bg-code-bg">
+      <Navbar />
+      <main>
+        <section id="inicio">
+          <Hero />
+        </section>
+        <section id="acerca">
+          <About />
+        </section>
+        <section id="proyectos">
+          <Projects />
+        </section>
+        <section id="contacto">
+          <Contact />
+        </section>
+      </main>
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;

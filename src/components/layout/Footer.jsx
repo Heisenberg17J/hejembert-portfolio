@@ -1,6 +1,5 @@
-import { Github, Linkedin,  Coffee, ArrowUp, Instagram } from "lucide-react";
+import { Github, Linkedin, Instagram, ArrowUp, Heart, Code2 } from "lucide-react";
 import { useState, useEffect } from "react";
-import Logo from "./navbar/Logo";
 
 export default function Footer() {
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -26,84 +25,60 @@ export default function Footer() {
   ];
 
   return (
-    <>
-      <footer className="relative bg-gradient-to-b from-[#020617] to-[#0a0f1e] border-t border-white/10">
-        {/* Decorative gradient */}
-        <div className="absolute inset-0 opacity-30">
-          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl"></div>
-        </div>
+    <footer className="bg-code-bg border-t border-code-bgTertiary">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
+        <div className="flex flex-col items-center space-y-5 sm:space-y-6">
+          <div className="flex items-center gap-2">
+            <Code2 className="w-4 h-4 sm:w-5 sm:h-5 text-code-green" />
+            <span className="font-mono text-code-textMuted text-xs sm:text-sm">
+              <span className="code-keyword">export default</span> <span className="code-function">footer</span>;
+            </span>
+          </div>
 
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-12">
-          
-          {/* Main Content */}
-          <div className="flex flex-col items-center space-y-8">
-            
-            {/* Logo */}
-            <Logo/>
+          <div className="flex items-center gap-3 sm:gap-4">
+            {socialLinks.map((social, index) => {
+              const Icon = social.icon;
+              return (
+                <a
+                  key={index}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group bg-code-bgSecondary border border-code-bgTertiary p-2 sm:p-2.5 rounded hover:border-code-textMuted transition-all duration-200"
+                  aria-label={social.label}
+                >
+                  <Icon className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-code-textMuted group-hover:text-code-text transition-colors" />
+                </a>
+              );
+            })}
+          </div>
 
-            {/* Description */}
-            <p className="text-gray-400 text-center max-w-md text-sm leading-relaxed">
-              Transformando ideas en productos digitales. 
-              Desarrollo web y arquitectura de software para startups y empresas.
-            </p>
+          <div className="w-full max-w-md border-t border-code-bgTertiary"></div>
 
-            {/* Social Links */}
-            <div className="flex items-center space-x-4">
-              {socialLinks.map((social, index) => {
-                const Icon = social.icon;
-                return (
-                  <a
-                    key={index}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group bg-white/5 border border-white/10 p-3 rounded-lg hover:border-blue-500/50 hover:bg-blue-500/10 transition-all duration-300 hover:scale-110"
-                    aria-label={social.label}
-                  >
-                    <Icon className="w-5 h-5 text-gray-400 group-hover:text-blue-400 transition-colors" />
-                  </a>
-                );
-              })}
+          <div className="flex flex-col sm:flex-row items-center gap-2 text-code-textMuted text-[10px] sm:text-xs font-mono">
+            <span>© {currentYear} <span className="code-string">"Hejembert Jaramillo"</span></span>
+            <span className="hidden sm:inline text-code-textDim">|</span>
+            <div className="flex items-center gap-1">
+              <span className="code-keyword">const</span> <span className="code-attr">built</span> = <span className="code-string">"love"</span>
+              <Heart className="w-3 h-3 text-code-pink fill-code-pink animate-pulse" />
             </div>
+          </div>
 
-            {/* Divider */}
-            <div className="w-full max-w-md border-t border-white/10"></div>
-
-            {/* Copyright */}
-            <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-2 text-gray-400 text-sm">
-              <span>© {currentYear} HJCode.</span>
-              <span className="hidden sm:inline">•</span>
-              <div className="flex items-center space-x-1">
-                <span>Hecho con</span>
-                <Coffee className="w-4 h-4 text-white fill-current animate-pulse" />
-                <span>por Hejembert Jaramillo</span>
-              </div>
-            </div>
-
+          <div className="text-code-textDim text-[10px] sm:text-xs font-mono">
+            <span className="code-comment">// Gracias por visitar mi portafolio</span>
           </div>
         </div>
+      </div>
 
-        {/* Scroll to Top Button */}
-        {showScrollTop && (
-          <button
-            onClick={scrollToTop}
-            className="fixed bottom-8 right-8 bg-gradient-to-br from-blue-600 to-cyan-500 text-white p-3 rounded-full shadow-lg hover:shadow-xl hover:shadow-blue-500/30 hover:scale-110 transition-all duration-300 z-40 group animate-fadeIn"
-            aria-label="Volver arriba"
-          >
-            <ArrowUp className="w-5 h-5 group-hover:-translate-y-1 transition-transform" />
-          </button>
-        )}
-
-        <style>{`
-          @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-          }
-          .animate-fadeIn {
-            animation: fadeIn 0.3s ease-out;
-          }
-        `}</style>
-      </footer>
-    </>
+      {showScrollTop && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 bg-code-bgSecondary border border-code-bgTertiary text-code-textMuted p-2 sm:p-2.5 rounded hover:border-code-green hover:text-code-green transition-all duration-200 z-40"
+          aria-label="Volver arriba"
+        >
+          <ArrowUp className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+        </button>
+      )}
+    </footer>
   );
 }
