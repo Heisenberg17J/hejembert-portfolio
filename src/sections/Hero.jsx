@@ -94,7 +94,7 @@ export default function Hero() {
 
             <div className="pt-2 sm:pt-4 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
               <a 
-                href="https://drive.google.com/file/d/1SKUGvXGIf1XY1iFDVa_cx-Ymf6jDk05C/view?usp=sharing" 
+                href="https://drive.google.com/file/d/1qYEL3gD48Gzh5K_nWhfILIH2PlZsWRzh/view?usp=sharing" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-code-blue/20 text-code-blue px-4 sm:px-5 py-2.5 sm:py-3 rounded border border-code-blue/30 hover:bg-code-blue/30 transition-all duration-300 font-mono text-xs sm:text-sm hover:border-code-blue/50"
